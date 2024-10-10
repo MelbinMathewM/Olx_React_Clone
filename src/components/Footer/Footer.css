@@ -1,0 +1,123 @@
+.footer {
+    display: flex;
+    width : 100%;
+    flex-direction: column;
+    background-color: #f7f7f7;
+    padding: 20px 0 0 0;
+}
+
+.footer-one {
+    width: 100%;
+    padding: 30px 0 0 0 ;
+}
+
+.footer-one ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: space-evenly;
+    background-color: rgb(245, 245, 245);
+    gap: 10px;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+.footer-one ul li {
+    list-style: none;
+}
+
+.footer-one h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
+.footer-one ul li ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-one ul li ul li {
+    color: #555;
+    font-size: 14px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.icons .follow-ul-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.follow-ul-1 li img {
+    width: 20px;
+    height: auto;
+}
+
+.icons .follow-ul-2 {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: flex-start;
+    align-items: center; */
+    gap: 15px;
+}
+
+.follow-ul-2 img {
+    width: 100px;
+    height: auto;
+}
+
+.footer-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color: rgba(0, 47, 52, 1);
+    color: white;
+}
+
+.footer-two ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    padding: 50px;
+    margin: 0;
+}
+
+.footer-two ul li {
+    font-size: 14px;
+    color: #fff;
+}
+
+#olx_logo{
+    width: 100px;
+}
+
+#car_logo{
+    margin-left:40px;
+    border-right: white 1px solid;
+}
+
+.footer-two img {
+    width: 60%;
+    height: auto;
+}
+
+
+.footer-two ul:last-child {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #bbb;
+}

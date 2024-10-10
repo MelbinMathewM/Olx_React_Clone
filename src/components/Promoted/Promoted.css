@@ -1,0 +1,29 @@
+.promo{
+    padding: 30px;
+    width: 100%;
+}
+
+.promo h3{
+    padding: 10px;
+    color: #2b397b;
+}
+
+.promo ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 15px;
+}
+
+.promo ul li{
+    list-style: none;
+}
+
+.promo ul li p{
+    font-weight: 600;
+    font-size: 18px;
+    color: #666666;
+}
+
+.promo ul img{
+    width: 100%;
+}

@@ -1,0 +1,262 @@
+.navbar {
+    width: 100%;
+    padding: 0px 5px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(247, 245, 243);
+    position: fixed;
+    top: 0;
+    font-size: 14px;
+    z-index: 2;
+    align-items: center;
+}
+
+.navbar img {
+    width: 5%;
+}
+
+.navbar-right {
+    width: 100%;
+    position: relative;
+}
+
+.navbar-right ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar .navbar-right ul li {
+    list-style: none;
+}
+
+#li1 {
+    width: 30%;
+    margin-top: 15px;
+}
+
+.location {
+    width: 100%;
+    padding: 15px;
+    border: black solid 2px;
+    border-radius: 6px;
+}
+
+#li2 {
+    width: 40%;
+}
+
+.search-item {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 6px;
+}
+
+.search-item input[type="search"] {
+    width: 90%;
+    padding: 16px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    border-radius: 6px;
+}
+
+.search-item i {
+    cursor: pointer;
+    width:10%;
+    padding: 7px;
+    background-color: rgb(1, 22, 10);
+}
+
+.search-item img {
+    width: 30px;
+    margin-left: 5px;
+    height: 30px;
+}
+
+.lang {
+    flex: 0 1 auto;
+}
+
+.lang span {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.lang-options {
+    display: none;
+}
+
+.login-text {
+    flex: 0 1 auto; 
+    position: relative;  
+}
+
+.login-text button {
+    text-decoration: underline;
+    font-size: 15px;
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+    font-weight: 600;
+}
+
+
+.logout-tooltip {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #f38888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    margin: auto;
+}
+
+
+.logout-tooltip p{
+    padding: 30px;
+    font-size: large;
+}
+
+.logout-tooltip button {
+    padding: 8px 12px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.logout-tooltip button:hover {
+    background-color: #e0e0e0;
+    color: red ;
+}
+
+
+.seller-btn {
+    flex: 0 1 auto;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.seller-btn button {
+    padding: 5px 15px;
+    border-radius: 35%;
+    border: 5px rgb(68, 68, 243) solid;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.subbar{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 12.8%;
+    background: white;
+    overflow-x: scroll;
+    border: 2px grey solid;
+}
+
+.subbar ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px;
+    border-left: none;
+    border-right: none;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.subbar ul li{
+    list-style: none;
+    overflow:visible;
+}
+
+.first h3{
+    margin-left: 30px;
+}
+
+@media (max-width : 900px){
+    #li1, #li2 {
+        width : 30%
+    }
+}
+@media (max-width : 800px){
+    #li1, #li2 {
+        width : 30%
+    }
+}
+
+@media (max-width : 700px){
+    #li1, #li2 {
+        width: 20%;
+    }
+    .search-item i {
+        cursor: pointer;
+        width:10%;
+        padding: 7px;
+        background-color: rgb(1, 22, 10);
+    }
+    
+    .search-item img {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .navbar img{
+        width : 12%;
+    }
+}
+
+
+
+@media (max-width : 500px){
+    #li1, #li2 {
+        display: none;
+    }
+    .navbar img{
+        width : 12%;
+    }
+    .navbar-right ul {
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .subbar{
+        top: 9.3%;
+    }
+}
